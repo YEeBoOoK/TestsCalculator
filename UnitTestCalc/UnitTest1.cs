@@ -11,10 +11,10 @@ namespace UnitTestCalc
         public void TestMethodSum()
         {
             // Arrange: устанавливает начальные условия для выполнения теста
-            decimal a = 2;
+            decimal a = 1;
             char b = '+';
             decimal c = -3;
-            decimal answer = -1;
+            decimal answer = -2;
 
             // Act: выполняет тест (обычно представляет одну строку кода)
             var factAnswer = Calculator.Calc(a, b, c);
@@ -27,9 +27,9 @@ namespace UnitTestCalc
         public void TestMethodSubtraction()
         {
             // Arrange: устанавливает начальные условия для выполнения теста
-            decimal a = 14;
+            decimal a = 13;
             char b = '-';
-            decimal c = -3;
+            decimal c = -4;
             decimal answer = 17;
 
             // Act: выполняет тест (обычно представляет одну строку кода)
@@ -43,7 +43,7 @@ namespace UnitTestCalc
         public void TestMethodMultiplication()
         {
             // Arrange: устанавливает начальные условия для выполнения теста
-            decimal a = 123456;
+            decimal a = 123;
             char b = '*';
             decimal c = 0;
             decimal answer = 0;
@@ -59,10 +59,10 @@ namespace UnitTestCalc
         public void TestMethodDivision()
         {
             // Arrange: устанавливает начальные условия для выполнения теста
-            decimal a = 12;
+            decimal a = 121;
             char b = '/';
-            decimal c = -3;
-            decimal answer = -4;
+            decimal c = -11;
+            decimal answer = -11;
 
             // Act: выполняет тест (обычно представляет одну строку кода)
             var factAnswer = Calculator.Calc(a, b, c);
